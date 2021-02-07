@@ -1,7 +1,8 @@
-name: Git comment
+name: Git Comment
 on:
   issues:
   types: [opened]
+  
 jobs:
   commnet:
     if: github.event_name == 'issues'
@@ -13,4 +14,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIPHY_TOKEN: ${{ secrets.GIPHY_TOKEN }}
-          comment-type: 'git'
+          comment-type: 'gif'
