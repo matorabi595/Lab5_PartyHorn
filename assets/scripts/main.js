@@ -2,6 +2,7 @@
 
 // TODO
 
+let vol = 100;
 
 var myHonk = document.getElementById('honk-btn');
 myHonk.onclick = function(e) {
