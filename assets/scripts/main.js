@@ -89,15 +89,18 @@ function play() {
  
 document.getElementById("volume-number").addEventListener("input", volumeNumber);
 function volumeNumber(e){
-   document.getElementById("volume-slider").value = e.target.value;
-   volumeImage(e.target.value);
+    vol = e.target.value;
+   document.getElementById("volume-slider").value = vol;
+   volumeImage(vol);
 }
 
 
 document.getElementById("volume-slider").addEventListener("input", barSlider);
 function barSlider(e){
-    document.getElementById("volume-number").value = e.target.value;
-    volumeImage(e.target.value);
+    vol = e.target.value;
+    document.getElementById("volume-number").value = vol;
+    volumeImage(vol);
+    
 }
 
 
